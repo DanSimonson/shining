@@ -60,7 +60,6 @@
 
 </template>
 <script>
-    //import '../../public/style.scss'
     //import image from '../assets/taneli-lahtinen-752773-unsplash.jpg';
     export default {
         name: 'Header',
@@ -82,7 +81,8 @@
     }
 </script>
 <style scoped lang="scss">
-    @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+    @import "../../public/styles.scss";
+    /*@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
     //variables
     $Light-green: #7ed56f;
     $Medium-green: #55c57a;
@@ -90,7 +90,7 @@
     $Black: #212121;
     $White: #FAFAFA;
     $Grey: #E0E0E0;
-    $Orange: #ff9900;
+    $Orange: #ff9900;*/
 
 
     .main {
