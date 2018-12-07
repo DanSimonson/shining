@@ -16,25 +16,9 @@
           </p>
         </div>
         <div class="about-grid-2">
-          <!-- <div class="composition">-->
-          <!--<img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-            alt="Photo 1" class="item composition__photo composition__photo--p1"-->
           <img class='photo asset1' src="../assets/img/jimmy.jpg" alt="photo">
           <img class='photo asset2' src="../assets/img/evelyn.jpg" alt="photo">
           <img class='photo asset3' src="../assets/img/jm3.jpg" alt="photo">
-
-          <!--<img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-            alt="Photo 2" class="item composition__photo composition__photo--p2" src="../assets/img/waterfall5.jpg">-->
-
-          <!--<img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-            alt="Photo 3" class="item composition__photo composition__photo--p3" src="../assets/img/waterfall5.jpg">-->
-
-          <!--
-                    <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                    <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                    <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                    -->
-          <!--</div> -->
         </div>
         <div class="about-grid-3">
           <h3 class="item heading">Create a landscape you can be proud of for years</h3>
@@ -44,9 +28,6 @@
             more.
           </p>
         </div>
-        <!--<a href="#" class="btn-text">Learn more &rarr;</a> -->
-
-
       </div>
     </section>
   </div>
@@ -157,12 +138,12 @@
   }
 
   .asset2 {
-    right: 0;
+    right: 2%;
     top: 4rem
   }
 
   .asset3 {
-    left: 10%;
+    left: 8%;
     top: 17rem
   }
 
@@ -187,6 +168,32 @@
   .about-grid-2:hover {
     .photo:not(:hover) {
       transform: scale(.93);
+    }
+  }
+
+  @media(max-width:768px) {
+    .about-content {
+      grid-template-rows: repeat(3, minmax(350px, auto));
+      /*grid-row-gap: 10px;
+      grid-column-gap: 10px;*/
+    }
+
+    .about-grid-1 {
+      /*border: 5px solid orange;*/
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .about-grid-2 {
+      /*border: 5px solid orange;*/
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .about-grid-3 {
+      /*border: 5px solid orange;*/
+      grid-column-start: 1;
+      grid-column-end: 5;
     }
   }
 </style>
