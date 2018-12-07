@@ -30,6 +30,7 @@
         </div>
       </div>
     </section>
+    <Footer></Footer>
   </div>
 </template>
 <script>
@@ -46,6 +47,7 @@
 
   .section-about {
     background-color: $White;
+    margin-bottom: 20px;
   }
 
   .heading-secondary {

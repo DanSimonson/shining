@@ -34,8 +34,8 @@
         <p>We are a family owned business with years of experience that can provide all your landscaping needs.</p>
         <a href="" class="btn" @click="contactMe">Contact Us</a>
       </div>
-    </div>>
-
+    </div>
+    <Footer></Footer>
   </div>
 </template>
 

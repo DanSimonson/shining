@@ -1,32 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 
 //variables
 $Light-green: #7ed56f;
 $Medium-green: #55c57a;
 $Dark-green: #28b485;
 $Black: #212121;
-$White: #FAFAFA;
-$Grey: #E0E0E0;
+$White: #fafafa;
+$Grey: #e0e0e0;
 $Light-grey: #f7f7f7;
 $Orange: #ff9900;
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 34px;
-    background-image: url('https://res.cloudinary.com/dmglopmul/image/upload/v1543815615/projectPhotos/landscape/taneli-lahtinen-752773-unsplash.jpg');
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-
+  font-family: "Luckiest Guy", cursive;
+  font-size: 34px;
+  background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1543815615/projectPhotos/landscape/taneli-lahtinen-752773-unsplash.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }

@@ -10,11 +10,15 @@
                         <li><i class="fa fa-road"></i> Perth Australia</li>
                         <li><i class="fa fa-phone"></i> 0416384960/0431641437</li>
                         <li><i class="fa fa-envelope"></i> ramaljimmy@yahoo.com/ sunshineve91@hotmail.com</li>
+                        <li><a href="https://www.facebook.com/shiningnatureaustralia/" target="_blank" aria-label="Facebook"><i
+                                    class="fab fa-facebook-square fa-lg">
+                                    Facebook</i></a></li>
                     </ul>
+
                 </div>
                 <div class="contact">
                     <!--<h3>Email Us</h3> -->
-                    <form>
+                    <form v-on:submit.prevent="onSubmit" action="https://formspree.io/sunshine91@hotmail.com" method="POST">
                         <p>
                             <label>First Name</label>
                             <input type="text" name="firstname">
@@ -35,20 +39,19 @@
                             <label>Message</label>
                             <textarea name="message" rows="5"></textarea>
                         </p>
-                        <p class="full">
-                            <button>Submit</button>
+                        <p class="full last-p">
+                            <button type="submit" class="btn btn-orange">Contact Us</button>
                         </p>
                     </form>
                 </div>
             </div>
         </div>
+        <Footer></Footer>
     </div>
 </template>
 <style scoped lang='scss'>
     @import "../../public/styles.scss";
-    /** {
-        box-sizing: border-box;
-    }*/
+
 
     .about {
         background: $Dark-green;
@@ -120,7 +123,7 @@
         grid-column: 1 / 3;
     }
 
-    .contact form button,
+    /*.contact form button,*/
     .contact form input,
     .contact form textarea {
         width: 100%;
@@ -128,7 +131,65 @@
         border: 1px solid #c9e6ff;
     }
 
-    .contact form button {
+    .last-p {
+        text-align: center;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100%;
+        outline: none;
+        transition: all .2s;
+        position: relative;
+    }
+
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        padding: 15px 40px;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    }
+
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .btn-orange {
+        background-color: $Orange;
+        color: $Black;
+    }
+
+    .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    .btn-orange::after {
+        background-color: $Orange
+    }
+
+    .btn:hover::after {
+        transform: scale(1.5);
+    }
+
+
+    /*.contact form button {
         background: #c9e6ff;
         border: 0;
         text-transform: uppercase;
@@ -141,6 +202,9 @@
         outline: 0;
         transition: background-color 2s ease-out;
     }
+
+    */
+
 
     /* LARGE SCREENS */
     @media(min-width:700px) {
@@ -157,6 +221,31 @@
         .company-info ul,
         .brand {
             text-align: left;
+        }
+    }
+
+    @media(max-width:700px) {
+
+        .contact form button,
+        .contact form input,
+        .contact form textarea {
+            width: 80%;
+            padding: 1em;
+            /*border: 1px solid #c9e6ff;*/
+        }
+
+        /*.contact form {
+            display: flex;
+            flex-direction: column;
+        }*/
+
+    }
+
+    @media(max-width:700px) {
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
         }
     }
 </style>

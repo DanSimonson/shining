@@ -41,6 +41,7 @@
         <aside class="sidebar"></aside>
         <footer class="footer"></footer>
         </body>
+        <Footer></Footer>
     </div>
 </template>
 
