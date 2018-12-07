@@ -145,6 +145,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        box-shadow: 0 1.5rem 4rem rgba($Black, .4);
+
         /*opacity: 0.8;
     background-color: RED;
     background-blend-mode: screen;*/
