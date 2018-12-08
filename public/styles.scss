@@ -29,3 +29,56 @@ p {
 .center-text {
   text-align: center;
 }
+
+.btn {
+  text-transform: uppercase;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100%;
+  outline: none;
+  transition: all .2s;
+  position: relative;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  padding: 15px 40px;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-orange {
+  background-color: $Orange;
+  color: $Black;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-orange::after {
+  background-color: $Orange
+}
+
+.btn:hover::after {
+  transform: scale(1.5);
+}
