@@ -32,7 +32,8 @@
       <div class="cta-text">
         <h2>Hire us to do your <span>Landcaping</span></h2>
         <p>We are a family owned business with years of experience that can provide all your landscaping needs.</p>
-        <a href="" class="btn" @click="contactMe">Contact Us</a>
+        <!-- <a href="#" class="btn" @click="contactMe">Contact Us</a>-->
+        <router-link to="/contact" class="btn btn-orange" tag="button">Contact Us</router-link>
       </div>
     </div>
     <Footer></Footer>
@@ -40,7 +41,6 @@
 </template>
 
 <script>
-  //import '../../public/styles.scss'
   export default {
     name: 'home',
     components: {
@@ -54,9 +54,10 @@
     },
     methods: {
       contactMe() {
-        this.$router.push({
+        this.$router.go('/contact');
+        /*this.$router.push({
           name: 'contact'
-        })
+        })*/
       }
     }
   }
@@ -129,7 +130,7 @@
     }
   }
 
-  .btn {
+  /*.btn {
     display: inline-block;
     padding: .7em 1.7em;
     background: $green;
@@ -140,6 +141,59 @@
     &:hover {
       background: darken($green, 10%);
     }
+  }*/
+  .btn {
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100%;
+    outline: none;
+    transition: all .2s;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  }
+
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  }
+
+  .btn-orange {
+    background-color: $Orange;
+    color: $Black;
+  }
+
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+  .btn-orange::after {
+    background-color: $Orange
+  }
+
+  .btn:hover::after {
+    transform: scale(1.5);
   }
 
   .hero {
