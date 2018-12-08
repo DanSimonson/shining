@@ -90,7 +90,7 @@
         close.classList.toggle("seeClose");
         let burger = document.querySelector(".burger");
         burger.classList.toggle("seeBurger");
-      }
+      },
     }
   };
 </script>

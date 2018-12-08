@@ -41,7 +41,7 @@
                             <textarea name="message" rows="5"></textarea>
                         </p>
                         <p class="full last-p">
-                            <button class="btn btn-orange">Contact Us</button>
+                            <button type="submit" class="btn btn-orange">Contact Us</button>
                         </p>
                     </form>
                 </div>
