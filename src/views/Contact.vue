@@ -18,7 +18,8 @@
                 </div>
                 <div class="contact">
                     <!--<h3>Email Us</h3> -->
-                    <form v-on:submit.prevent="onSubmit" action="https://formspree.io/sunshine91@hotmail.com" method="POST">
+                    <form action="https://formspree.io/sunshine91@hotmail.com" method="POST">
+                        <!--v-on:submit.prevent="onSubmit" /// may prevent default form refresh page action later-->
                         <p>
                             <label>First Name</label>
                             <input type="text" name="firstname">
@@ -40,7 +41,7 @@
                             <textarea name="message" rows="5"></textarea>
                         </p>
                         <p class="full last-p">
-                            <button type="submit" class="btn btn-orange">Contact Us</button>
+                            <button class="btn btn-orange">Contact Us</button>
                         </p>
                     </form>
                 </div>
