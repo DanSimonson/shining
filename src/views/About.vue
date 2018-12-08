@@ -16,9 +16,9 @@
           </p>
         </div>
         <div class="about-grid-2">
-          <img class='photo asset1' src="../assets/img/jimmy.jpg" alt="photo">
-          <img class='photo asset2' src="../assets/img/evelyn.jpg" alt="photo">
-          <img class='photo asset3' src="../assets/img/jm3.jpg" alt="photo">
+          <img class='photo asset1' src="../assets/img/sunflower.jpg" alt="photo">
+          <img class='photo asset2' src="../assets/img/plant.jpg" alt="photo">
+          <img class='photo asset3' src="../assets/img/plantcolor.jpg" alt="photo">
         </div>
         <div class="about-grid-3">
           <h3 class="item heading">Create a landscape you can be proud of for years</h3>
