@@ -4,7 +4,7 @@
             <p>&copy 2018 - Shining Nature Landscape</p>
             <a href="https://www.facebook.com/shiningnatureaustralia/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square fa-lg">
                     Facebook</i></a>
-            <h4>Made with <i class="fas fa-heart fa-sm"></i> by mariposaweb</h4>
+            <h4>made with <i class="fas fa-heart fa-sm"></i> by mariposaweb</h4>
         </div>
 
     </div>

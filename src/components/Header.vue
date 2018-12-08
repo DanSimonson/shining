@@ -195,7 +195,7 @@
   }
 
   .hamburger {
-    z-index: 3;
+    z-index: 22;
     top: 15px;
     left: 25px;
     position: fixed;
@@ -249,6 +249,7 @@
       position: fixed;
       top: 0;
       left: 0;
+      z-index: 21;
     }
 
     .nav-links {
