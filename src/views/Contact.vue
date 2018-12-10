@@ -18,7 +18,7 @@
                 </div>
                 <div class="contact">
                     <!--<h3>Email Us</h3> -->
-                    <form action="https://formspree.io/ghiesimonson@gmail.com " method="POST">
+                    <form action="https://formspree.io/ramaljimmy@yahoo.com" method="POST">
                         <!--v-on:submit.prevent="onSubmit" /// may prevent default form refresh page action later-->
                         <p>
                             <label>First Name</label>
