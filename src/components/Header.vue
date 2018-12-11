@@ -167,7 +167,7 @@
     a {
       text-decoration: none;
       color: $Black;
-      transition: border .2s;
+      transition: all .2s;
     }
 
     a:hover {
