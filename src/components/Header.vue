@@ -167,10 +167,13 @@
     a {
       text-decoration: none;
       color: $Black;
+      transition: border .2s;
     }
 
     a:hover {
       cursor: pointer;
+      border-bottom: 2px solid $Dark-green;
+      border-top: 2px solid $Dark-green;
     }
   }
 
