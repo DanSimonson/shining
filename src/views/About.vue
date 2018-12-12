@@ -58,12 +58,13 @@
     display: inline-block;
     -webkit-background-clip: text;
     color: transparent;
-    transition: all .2s;
+    transition: all 1s;
     margin-top: 30px;
     margin-bottom: 30px;
 
     &:hover {
-      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      /*transform: skewY(2deg) skewX(15deg) scale(1.1);*/
+      transform: skewX(10deg) scale(1.1);
       text-shadow: .5rem 1rem 2 rem rgba($Black, .2);
     }
   }
