@@ -4,11 +4,17 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>-->
     <!--<Homepage></Homepage>-->
     <Header></Header>
+
     <div class="hero">
-      <p>Things are <span>awesome</span> here at</p>
+      <transition appear name='appear'>
+        <p>Things are <span>awesome</span> here at</p>
+      </transition>
       <h1>Shining Nature Landscape And Garden</h1>
-      <p>We <strong>Design</strong> and <strong>Develop Awesome</strong> Landscapes</p>
+      <transition appear name='appearTwo'>
+        <p>We <strong>Design</strong> and <strong>Develop Awesome</strong> Landscapes</p>
+      </transition>
     </div>
+
 
     <div class="sales-points">
       <div class="sales-point">
@@ -225,6 +231,83 @@
 
   div.sales-point p {
     mix-blend-mode: darken;
+  }
+
+  .appear-enter {
+    opacity: 0;
+  }
+
+  .appear-enter-active {
+    transition: opacity 1s;
+    animation: slideUp 1s ease-out;
+    transition-delay: .3s;
+  }
+
+  .appear-leave {}
+
+  .appear-leave-active {
+    opacity: 0;
+    transition: opacity 1s;
+    animation: slideDown 1s ease-out;
+  }
+
+  .appearTwo-enter {
+    transform: translateX(30px);
+    opacity: 0;
+
+  }
+
+  .appearTwo-enter-active {
+    transition: all 1.3s ease;
+    transition-delay: .5s;
+  }
+
+  .appearTwo-leave {}
+
+  .appearTwo-leave-active {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1.3s ease;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px)
+    }
+
+    to {
+      transform: translateY(0)
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(0)
+    }
+
+    to {
+      transform: translateY(50px)
+    }
+  }
+
+  @keyframes slideUpTwo {
+    from {
+      transform: translateY(100px)
+    }
+
+    to {
+      transform: translateY(0)
+    }
+  }
+
+  @keyframes slideDownTwo {
+    from {
+      transform: translateY(0)
+    }
+
+    to {
+      transform: translateY(20px)
+    }
   }
 
   @media (min-width: 40rem) {

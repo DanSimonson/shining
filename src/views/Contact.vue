@@ -7,7 +7,9 @@
                 <div class="company-info">
                     <h3>Shining Nature Landcape & Garden</h3>
                     <ul>
-                        <li><i class="fa fa-road"></i> Perth Australia</li>
+                        <transition name='appear'>
+                            <li><i class="fa fa-road"></i> Perth Australia</li>
+                        </transition>
                         <li><i class="fa fa-phone"></i> 0416384960/0431641437</li>
                         <li><i class="fa fa-envelope"></i> ramaljimmy@yahoo.com/ sunshineve91@hotmail.com</li>
                         <li><a href="https://www.facebook.com/shiningnatureaustralia/" target="_blank" aria-label="Facebook"><i
@@ -186,6 +188,43 @@
 
     .btn:hover::after {
         transform: scale(1.5);
+    }
+
+    .appear-enter {
+        opacity: 0;
+    }
+
+    .appear-enter-active {
+        transition: opacity 1s;
+        animation: slideUp 1s ease-out;
+    }
+
+    .appear-leave {}
+
+    .appear-leave-active {
+        opacity: 0;
+        transition: opacity 1s;
+        animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(20px)
+        }
+
+        to {
+            transform: translateY(0)
+        }
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(0)
+        }
+
+        to {
+            transform: translateY(20px)
+        }
     }
 
 
