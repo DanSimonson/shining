@@ -18,18 +18,20 @@
 
     <div class="sales-points">
       <div class="sales-point">
-        <h2>Gardening</h2>
-        <p>We are passionate about gardens and will use thoughtful
+        <h2 v-scroll-reveal.reset>Gardening</h2>
+        <p v-scroll-reveal.reset="{delay:500}">We are passionate about gardens and will use thoughtful
           finishing touches to create the perfect addition to your home or business.</p>
       </div>
       <div class="sales-point">
-        <h2>Paving</h2>
-        <p>We offer great paving solutions for driveways, patios, garden paths and courtyards. We can supply all types
+        <h2 v-scroll-reveal.reset>Paving</h2>
+        <p v-scroll-reveal.reset="{delay:500}">We offer great paving solutions for driveways, patios, garden paths and
+          courtyards. We can supply all types
           of landscape paving jobs.</p>
       </div>
       <div class="sales-point">
-        <h2>Water Features</h2>
-        <p>Realizing one size doesn't fit all, We take the time to listen, tailoring our water features to meet your
+        <h2 v-scroll-reveal.reset>Water Features</h2>
+        <p v-scroll-reveal.reset="{delay:500}">Realizing one size doesn't fit all, We take the time to listen,
+          tailoring our water features to meet your
           needs and expectations.</p>
       </div>
     </div>
@@ -239,8 +241,10 @@
 
   .appear-enter-active {
     transition: opacity 1s;
-    animation: slideUp 1s ease-out;
+    animation: slideUp 1.5s ease-out;
     transition-delay: .3s;
+
+
   }
 
   .appear-leave {}
@@ -248,11 +252,12 @@
   .appear-leave-active {
     opacity: 0;
     transition: opacity 1s;
-    animation: slideDown 1s ease-out;
+    animation: slideDown 1.5s ease-out;
+
   }
 
   .appearTwo-enter {
-    transform: translateX(30px);
+    transform: translateX(400px);
     opacity: 0;
 
   }
@@ -265,9 +270,9 @@
   .appearTwo-leave {}
 
   .appearTwo-leave-active {
-    transform: translateX(30px);
+    transform: translateX(200px);
     opacity: 0;
-    transition: all 1.3s ease;
+    transition: all 1.8s ease;
   }
 
   @keyframes slideUp {
@@ -292,7 +297,7 @@
 
   @keyframes slideUpTwo {
     from {
-      transform: translateY(100px)
+      transform: translateY(400px)
     }
 
     to {
@@ -306,7 +311,7 @@
     }
 
     to {
-      transform: translateY(20px)
+      transform: translateY(400px)
     }
   }
 

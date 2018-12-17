@@ -2,14 +2,12 @@
     <div class="about">
         <Header></Header>
         <div class="container">
-            <h1 class="brand"><span>Leave</span> Us A Message</h1>
+            <h1 class="brand animated bounceInRight"><span>Leave</span> Us A Message</h1>
             <div class="wrapper animated bounceInLeft">
                 <div class="company-info">
-                    <h3>Shining Nature Landcape & Garden</h3>
+                    <h3 class="animated rotateInUpLeft">Shining Nature Landcape & Garden</h3>
                     <ul>
-                        <transition name='appear'>
-                            <li><i class="fa fa-road"></i> Perth Australia</li>
-                        </transition>
+                        <li><i class="fa fa-road"></i> Perth Australia</li>
                         <li><i class="fa fa-phone"></i> 0416384960/0431641437</li>
                         <li><i class="fa fa-envelope"></i> ramaljimmy@yahoo.com/ sunshineve91@hotmail.com</li>
                         <li><a href="https://www.facebook.com/shiningnatureaustralia/" target="_blank" aria-label="Facebook"><i
@@ -77,6 +75,9 @@
 
     .brand {
         text-align: center;
+        animation-duration: 2s;
+        animation-delay: .3s;
+        animation-iteration-count: 1;
     }
 
     .brand span {
@@ -85,6 +86,9 @@
 
     .wrapper {
         box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+        animation-duration: 2s;
+        animation-delay: .3s;
+        animation-iteration-count: 1;
     }
 
     .wrapper>* {
@@ -94,6 +98,12 @@
     .company-info {
         /*background: #c9e6ff;*/
         background: $Light-green;
+
+        h3 {
+            animation-duration: 2s;
+            animation-delay: 2.3s;
+            animation-iteration-count: 1;
+        }
     }
 
     .company-info h3,
@@ -190,42 +200,7 @@
         transform: scale(1.5);
     }
 
-    .appear-enter {
-        opacity: 0;
-    }
 
-    .appear-enter-active {
-        transition: opacity 1s;
-        animation: slideUp 1s ease-out;
-    }
-
-    .appear-leave {}
-
-    .appear-leave-active {
-        opacity: 0;
-        transition: opacity 1s;
-        animation: slideDown 1s ease-out;
-    }
-
-    @keyframes slideUp {
-        from {
-            transform: translateY(20px)
-        }
-
-        to {
-            transform: translateY(0)
-        }
-    }
-
-    @keyframes slideDown {
-        from {
-            transform: translateY(0)
-        }
-
-        to {
-            transform: translateY(20px)
-        }
-    }
 
 
     /*.contact form button {
