@@ -76,7 +76,7 @@
     .brand {
         text-align: center;
         animation-duration: 2s;
-        animation-delay: .3s;
+        animation-delay: 1s;
         animation-iteration-count: 1;
     }
 
@@ -87,7 +87,7 @@
     .wrapper {
         box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
         animation-duration: 2s;
-        animation-delay: .3s;
+        animation-delay: 1s;
         animation-iteration-count: 1;
     }
 
@@ -101,7 +101,7 @@
 
         h3 {
             animation-duration: 2s;
-            animation-delay: 2.3s;
+            animation-delay: 3s;
             animation-iteration-count: 1;
         }
     }
