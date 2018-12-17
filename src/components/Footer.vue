@@ -44,7 +44,7 @@
 
         a {
             margin-right: 10px;
-            color: blue
+            color: #8b9dc3
         }
 
         a:hover,
@@ -72,13 +72,13 @@
         }
 
         i.fab.fa-facebook-square {
-            color: blue;
+            color: #3b5998;
             cursor: pointer;
             transition: all .3s;
         }
 
         i.fab.fa-facebook-square:hover {
-            color: #3B5998;
+            color: #8b9dc3;
 
         }
 
