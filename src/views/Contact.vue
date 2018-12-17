@@ -25,7 +25,7 @@
                             <input type="text" name="firstname">
                         </p>
                         <p>
-                            <label>Last Name</label>
+                            <label>Last &nbspName</label>
                             <input type="text" name="lastname">
                         </p>
                         <p>
