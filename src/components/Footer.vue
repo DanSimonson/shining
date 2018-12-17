@@ -4,7 +4,8 @@
             <p>&copy 2018 - Shining Nature Landscape</p>
             <a href="https://www.facebook.com/shiningnatureaustralia/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square fa-lg">
                     Facebook</i></a>
-            <h4>made with <i class="fas fa-heart fa-sm"></i> by mariposaweb</h4>
+            <h4>made with <i class="fas fa-heart fa-sm"></i> <a href="https://mariposaweb.net" target="_blank">
+                    @mariposaweb.net</a></h4>
         </div>
 
     </div>
@@ -39,34 +40,71 @@
         align-items: center;
         justify-content: space-around;
         padding: 10px;
+        color: $Black;
+
+        a {
+            margin-right: 10px;
+            color: blue
+        }
+
+        a:hover,
+        a:active {
+            color: #3B5998
+        }
+
+        h4 {
+            font-size: 1rem;
+
+            a {
+                text-decoration: none;
+                color: $Black;
+                transition: all .3s
+            }
+
+            a:hover,
+            a:active {
+                color: #3B5998;
+            }
+        }
+
+        .fas.fa-heart {
+            color: red;
+        }
+
+        i.fab.fa-facebook-square {
+            color: blue;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        i.fab.fa-facebook-square:hover {
+            color: #3B5998;
+
+        }
+
+        p {
+            font-size: 1rem;
+            /*margin-left: 10px;*/
+        }
     }
 
-    p {
+
+
+
+
+    /* h4 {
         font-size: 1rem;
-        /*margin-left: 10px;*/
     }
 
-    a {
-        margin-right: 10px;
-    }
 
-    h4 {
-        font-size: 1rem;
-        /*margin-right: 10px;*/
-    }
-
-    .fas.fa-heart {
-        color: red;
-    }
-
-    .fab.fa-facebook-square {
-        color: blue
-    }
-
-    .fab.fa-facebook-square {
+    /*.fab.fa-facebook-square {
         color: blue;
         cursor: pointer;
     }
+    .fab.fa-facebook-square {
+        color: blue;
+        cursor: pointer;
+    }*/
 
     @media(max-width:700px) {
         /*.copyright {
