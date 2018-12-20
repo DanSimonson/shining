@@ -5,10 +5,10 @@
             <section class="info1">
                 <h2>Enriching lives through Landscaping</h2>
                 <p> We offer a friendly price.</p>
-                <a href="#" @click="aboutMe" class="info-link"><span class="spin">Learn more...</span></a>
+                <a href="#" @click="aboutMe" class="info-link"><span class="spin">See more...</span></a>
             </section>
             <figure class="figure1">
-                <img class="figure-img" src="../assets/img/waterfall5.jpg" alt="landscape">
+                <img class="figure-img" src="../assets/img/waterfall2.jpg" alt="landscape">
                 <!--src="http://placekitten.com/g/350/200" alt="a kitten" -->
             </figure>
             <figure class="figure2">
@@ -18,24 +18,24 @@
                 <img class="figure-img" src="../assets/img/gravel.jpg" alt="landscape">
             </figure>
             <figure class="figure4">
-                <img class="figure-img" src="../assets/img/sidegarden3.jpg" alt="landscape">
+                <img class="figure-img" src="../assets/img/thirteen.jpg" alt="landscape">
             </figure>
             <figure class="figure5">
                 <img class="figure-img" src="../assets/img/pottery.jpg" alt="landscape">
             </figure>
             <figure class="figure6">
-                <img class="figure-img" src="../assets/img/lawngarden.jpg" alt="landscape">
+                <img class="figure-img" src="../assets/img/ten.jpg" alt="landscape">
             </figure>
             <section class="info2">
                 <h2>Just Imagine</h2>
                 <p>Let us show you the possibilities</p>
-                <a href="#" @click="aboutMe" class="info-link"><span class="spin">Learn more... </span></a>
+                <a href="#" @click="aboutMe" class="info-link"><span class="spin">See more... </span></a>
             </section>
             <figure class="figure7">
                 <img class="figure-img" src="../assets/img/waterfall6.jpg" alt="landscape">
             </figure>
             <figure class="figure7">
-                <img class="figure-img" src="../assets/img/rocks.jpg" alt="landscape">
+                <img class="figure-img" src="../assets/img/fourteen.jpg" alt="landscape">
             </figure>
         </main>
         <aside class="sidebar"></aside>
@@ -53,13 +53,14 @@
         },
         data() {
             return {
+                photos: ['one', 'two']
 
             }
         },
         methods: {
             aboutMe() {
                 this.$router.push({
-                    name: 'about'
+                    name: 'gallery'
                 })
             }
 
@@ -68,13 +69,7 @@
 </script>
 <style scoped lang='scss'>
     @import "../../public/styles.scss";
-    /*variables
-    //$Light-green: #7ed56f;
-    $Medium-green: #55c57a;
-    //$Dark-green: #28b485;
-    //$Black: #212121;
-    $White: #FAFAFA;
-    $Orange: #ff9900;*/
+
 
     /* grid styles ------------------------------------ */
     @media (min-width: 600px) {
@@ -158,10 +153,14 @@
         background-blend-mode: multiply;
     }
 
-    /*.figure-img:active,
-.figure-img:hover {
-    opacity: 0.9
-}*/
+    img.figure1:hover {
+        background: black;
+    }
+
+    .figure-img:active,
+    .figure-img:hover {
+        background: black;
+    }
 
     .info1,
     .info2 {
