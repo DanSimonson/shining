@@ -29,7 +29,7 @@
         },
         methods: {
             show(index) {
-                //console.log('here');
+
                 this.visible = true;
                 this.index = index;
                 this.myImg = this.images[index].img;
