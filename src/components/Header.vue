@@ -23,6 +23,10 @@
           </router-link>
         </li>
         <li class="links">
+          <router-link to="/gallery" tag="a" exact><strong>Gallery </strong>
+          </router-link>
+        </li>
+        <li class="links">
           <router-link to="/contact" tag="a" exact><strong>Contact </strong>
           </router-link>
         </li>
@@ -60,6 +64,11 @@
           <router-link to="/portfolio" tag="a" exact><strong>Portfolio </strong>
           </router-link>
         </li>
+        <li class="nav-links">
+          <router-link to="/gallery" tag="a" exact><strong>Gallery </strong>
+          </router-link>
+        </li>
+
         <li class="nav-links">
           <router-link to="/contact" tag="a" exact><strong>Contact </strong>
           </router-link>

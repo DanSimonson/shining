@@ -5,9 +5,11 @@ import store from "./store";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import VueScrollReveal from "vue-scroll-reveal";
+import BoxView from "./components/BoxView.vue";
 
 Vue.component("Header", Header);
 Vue.component("Footer", Footer);
+Vue.component("boxview", BoxView);
 Vue.use(VueScrollReveal, {
   duration: 800,
   scale: 1,

@@ -1,17 +1,19 @@
 <template>
     <div class="gallery">
         <Header></Header>
+
         <div class="header">
             <!--<h1>Responsive Image Grid</h1> -->
             <p>With our friendly price your options are boundless.</p>
         </div>
-        <div class="portfolio">
-            <img :src="image.img" v-for="image in images" :key="image.id" />
-        </div>
+
+        <boxview :images="images" />
+
         <Footer></Footer>
     </div>
 </template>
 <script>
+    //import Lightbox from "../components/Lightbox.vue"
     import one from "../assets/img/new/one.jpg";
     import two from "../assets/img/new/two.jpg";
     import three from "../assets/img/new/three.jpg";
@@ -30,60 +32,46 @@
     import sixteen from "../assets/img/new/sixteen.jpg";
     import seventeen from "../assets/img/new/seventeen.jpg";
     export default {
+        name: 'gallery',
         data() {
+
             return {
-                images: [
-                    /*({
-                      img: one,
-                      id: "0"
-                    },*/
-                    {
+                images: [{
                         img: two,
-                        id: 1
-                    },
-                    {
+                        id: 0
+                    }, {
                         img: three,
-                        id: 2
-                    },
-                    {
+                        id: 1
+                    }, {
                         img: four,
-                        id: 3
-                    },
-                    {
+                        id: 2
+                    }, {
                         img: five,
-                        id: 4
-                    },
-                    {
+                        id: 3
+                    }, {
                         img: six,
-                        id: 5
-                    },
-                    {
+                        id: 4
+                    }, {
                         img: seven,
-                        id: 6
-                    },
-                    {
+                        id: 5
+                    }, {
                         img: eight,
-                        id: 7
-                    },
-                    {
+                        id: 6
+                    }, {
                         img: nine,
-                        id: 8
-                    },
-                    {
+                        id: 7
+                    }, {
                         img: sixteen,
-                        id: 9
-                    },
-                    {
+                        id: 8
+                    }, {
                         img: eleven,
-                        id: 10
-                    },
-                    {
+                        id: 9
+                    }, {
                         img: twelve,
-                        id: 11
-                    },
-                    {
+                        id: 10
+                    }, {
                         img: seventeen,
-                        id: 12
+                        id: 11
                     }
                     /*{
                       img: fourteen,
@@ -98,27 +86,64 @@
                       id: 15
                     }*/
                 ],
-                myIndex: 0
+                //index: 0,
+                //visible: false,
+                //myImg: ''
             };
+        },
+        methods: {
+            show(index) {
+                //console.log('here');
+                this.visible = true;
+                this.myImg = this.images[index].img;
+
+            },
+            hide() {
+                this.visible = false;
+                this.index = 0;
+
+            },
+            hasNext() {
+                return this.index + 1 < this.images.length;
+            },
+            hasPrev() {
+                return this.index - 1 >= 0;
+            },
+            prev() {
+                if (this.hasPrev()) {
+                    this.index -= 1;
+                }
+            },
+            next() {
+                if (this.hasNext()) {
+                    this.index += 1;
+                }
+            },
+            onKeydown(e) {
+                if (this.visible) {
+                    switch (e.key) {
+                        case 'ArrowRight':
+                            this.next();
+                            break;
+                        case 'ArrowLeft':
+                            this.prev();
+                            break;
+                        case 'ArrowDown':
+                        case 'ArrowUp':
+                        case ' ':
+                            e.preventDefault();
+                            break;
+                        case 'Escape':
+                            this.hide();
+                            break;
+                    }
+                }
+            }
         }
-    };
+    }
 </script>
 <style scoped lang="scss">
     @import "../../public/styles.scss";
-
-    /* Portfolio */
-    .portfolio {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        margin-bottom: 1rem;
-    }
-
-    .portfolio img {
-        width: 100%;
-        box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-        object-fit: cover;
-    }
 
     .header {
         text-align: center;
