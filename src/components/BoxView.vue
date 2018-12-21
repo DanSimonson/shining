@@ -101,7 +101,7 @@
 
         &:hover {
             cursor: pointer;
-            opacity: .8;
+            opacity: .9;
         }
     }
 
@@ -162,7 +162,9 @@
 
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover,
-    .next:hover {
+    .next:hover,
+    .prev:active,
+    .next:active {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
