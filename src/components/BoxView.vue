@@ -156,24 +156,24 @@ export default {
     width: 100%;
   }
 }
-.screen-content a.prev[data-v-4c777910] {
+.screen-content a.prev {
   position: absolute;
   left: 0;
   top: 50%;
   color: $Orange;
   margin-left: 5px;
 }
-.screen-content a.next[data-v-4c777910] {
+.screen-content a.next {
   position: absolute;
   right: 0;
   top: 50%;
   color: $Orange;
   margin-right: 5px;
 }
-.screen-content a.prev[data-v-4c777910]:hover,
-.screen-content a.prev[data-v-4c777910]:active,
-.screen-content a.next[data-v-4c777910]:hover,
-.screen-content a.next[data-v-4c777910]:active {
+.screen-content a.prev:hover,
+.screen-content a.prev:active,
+.screen-content a.next:hover,
+.screen-content a.next:active {
   cursor: pointer;
   color: $Light-green;
 }
